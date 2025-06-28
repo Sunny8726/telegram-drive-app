@@ -1,2 +1,13 @@
-CREDS = Credentials.from_service_account_file("creds.json", scopes=SCOPE)
-
+{
+  "type": "service_account",
+  "project_id": "flash-medley-464305-h2",
+  "private_key_id": "60ac6771856fcf9c5ccd99f44234d06e4b0d093a",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDi+U9R8UqRLpk5\njyocR6kp5WzB4gB0VIYtPHXjQdeYNCGMy13mxzzuYxRJJsRMpcnVj5d6ZCAQXfki\nhOKE0vkgEllKVuEyOhR+2MvF+/FCj3iQYGtTn2JpZme4hzX+ImzlPbqWTwFn8lhX\naxV/qnOkrkK4olAlUr7X74EfNQ4QbDiDZUP8A4yzVIHbEumONMSdtytnjNI9sF7A\nackpGUi+7WqquMfKAIEostCc6D2MupiM/npN3TNlgEDZaTZk3LEa0/q7/sXwXiZx\ndwx1rLqkBCjrya75gO3DVjKOXrG6K4amtXzJlEDkSIQUQ5Zm6EUI9qR0PAjjkZ7C\nazNGU7BDAgMBAAECggEAReFvT/HDvP5FU6jl1K4lgY4u1WSxMh/B7dSDETR43dYT\nDEeiwgZOlrCvkrQaVOToRtW+VALWsmNUbJHQMgfIhtzPW+lyzSV/oOw7lNm0VoNY\noc7lzGmygXPzdCdA8t0DfPLr6xIpAylklImWJWfD0gyK41Cp70vSESaesQ6DJX+v\nsAuXSG+O5AKUt32QosK+p2r5fuQvdP61OoiH9QAp++tvEAh73QrE/Xe8Tjf5xNal\n4sIbGgu56BBew+gd0CZTDKvvgm2BtZ+cZkSYkrRVSomLbtw2d93nQlMS5baAB4Sj\nDzj003cMhQBnjhgXiNOUxI7GqXV8DH4kSlAy8gq0VQKBgQD8rM9HQzuJuWNIYTP8\nSHjf8rfe9viWZy/BvJtXRK6jr36/UsTXfbSMjkMoNpBPWqxQ1w2NNwknzQF/iLiK\n2KlcDqHdwxXA3AttMjiCjLo4OX6BcGnDU37p/tllscmOZ7STCOEs90YnmUmrzQxN\nlbN+U3GURoRfE7XYp6xmIF6S9wKBgQDl9euUHSWgt8jBU1KqgdXvaYDWiZcG4n8J\nijHEsJfmolC7zk6D7ARFccHrYIxRHx1TFG49yRNk4sueGQnQuYZGCDsrcAtyAwHS\ndvyHN2apom5iyya1d0aEy6UzUKrPswHfDvGTHdDS2HRhU9aKmJfwkcKBZ4AWCScB\nrCFfcZDuFQKBgQCVP6Ij7tOhM08wtrHVSB2V8rGnUuxdMtAjuLttHdWmPAg7DLHW\ns5rNF08V1r0BEocMLSsFCcgvqUlEQsb2xKmtBbuY2R3lUFSziGGWw3dPtK5D2Nmw\nFYa2wuE4z35Fzn38B9eyDtFynHnGsBSfU1i1uqYxNkIEQwk70zbjECWs2wKBgQCN\nnxMzR3QJ88V+Ujth6M4BQL9o4JmTUuAb1vDpijwyfJot31N5aVwEDJf5xp8Dwp7D\nsJxoDrKT+hyeRBtIYUlxTdZq3PkfgPyZSlAhUhw2smM7EpPHRCq409XssWxQt5Sa\nc9CQ4tbdUxLxcbl555oDPTFFkqFOcNqF7CUta3pvNQKBgQDrG9c1hkxfUihyrklY\nFb0qDTJjfH8pbdiz5Ik/LFij6ASp+Y1iOJKwxLGffNdQOogz50MqeF8ea6HPK7AB\nzlY0uPxYNGAkEE9vAJ0Rwee6h6UJ0dTZQiEcC1ouh7kPBjDpHc7jZ8DnRhjltMtU\nHoaG4v6zapkrIINi3HXT5yPRTg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "streamlit-telegram-bot@flash-medley-464305-h2.iam.gserviceaccount.com",
+  "client_id": "108785338248258713915",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/streamlit-telegram-bot%40flash-medley-464305-h2.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

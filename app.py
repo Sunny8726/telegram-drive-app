@@ -11,20 +11,7 @@ SHEET_NAME = "TelegramDriveData"  # your Google Sheet name
 
 # Google Sheets auth
 SCOPE = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
-CREDS = Credentials.from_service_account_info({
-    "type": "service_account",
-    "project_id": "flash-medley-464305-h2",
-    "private_key_id": "60ac6771856fcf9c5ccd99f44234d06e4b0d093a",
-    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDi+U9R8UqRLpk5...\n-----END PRIVATE KEY-----\n",
-    "client_email": "streamlit-telegram-bot@flash-medley-464305-h2.iam.gserviceaccount.com",
-    "client_id": "108785338248258713915",
-    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/streamlit-telegram-bot%40flash-medley-464305-h2.iam.gserviceaccount.com",
-    "universe_domain": "googleapis.com"
-}, scopes=SCOPE)
-
+CREDS = Credentials.from_service_account_file("creds.json", scopes=SCOPE)
 gc = gspread.authorize(CREDS)
 sheet = gc.open(SHEET_NAME).sheet1
 
@@ -54,9 +41,12 @@ if submit and file:
         msg_id = r.json()["result"]["message_id"]
         message_link = f"https://t.me/c/{CHANNEL_ID[4:]}/{msg_id}"
 
-        # Save to Google Sheet
-        sheet.append_row([file.name, folder, caption, timestamp, message_link])
-        st.markdown(f"🔗 [View File in Telegram]({message_link})")
+        try:
+            # Save to Google Sheet
+            sheet.append_row([file.name, folder, caption, timestamp, message_link])
+            st.markdown(f"🔗 [View File in Telegram]({message_link})")
+        except Exception as e:
+            st.error(f"❌ Failed to write to Google Sheet: {e}")
     else:
         st.error("❌ Upload failed. Check BOT_TOKEN or CHANNEL_ID.")
 

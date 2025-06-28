@@ -1,1 +1,2 @@
+CREDS = Credentials.from_service_account_file("creds.json", scopes=SCOPE)
 
